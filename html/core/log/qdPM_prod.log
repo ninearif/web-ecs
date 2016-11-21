@@ -1,0 +1,3 @@
+Nov 21 17:21:20 symfony [err] {Doctrine_Connection_Mysql_Exception} SQLSTATE[42S02]: Base table or view not found: 1146 Table 'web_db.configuration' doesn't exist. Failing Query: "SELECT `c`.`id` AS `c__id`, `c`.`key` AS `c__key`, `c`.`value` AS `c__value` FROM `configuration` `c`"
+Nov 21 17:30:25 symfony [err] {Doctrine_Connection_Mysql_Exception} SQLSTATE[42S02]: Base table or view not found: 1146 Table 'web_db.configuration' doesn't exist. Failing Query: "SELECT `c`.`id` AS `c__id`, `c`.`key` AS `c__key`, `c`.`value` AS `c__value` FROM `configuration` `c`"
+Nov 21 17:31:03 symfony [err] {Doctrine_Connection_Exception} PDO Connection Error: SQLSTATE[HY000] [1049] Unknown database 'web_db'
