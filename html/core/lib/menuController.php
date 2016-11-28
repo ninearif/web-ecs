@@ -143,25 +143,7 @@ class menuController
 	
     return array('title'=>__('Tasks'),'url'=>'tasks/index','submenu'=>$s,'class'=>'fa-tasks');
 	}
-	
-//	public function buildTicketsMenu()
-//	{
-//    $s = array();
-//	  $is_hr = false;
-//
-////    $s[] = array('title'=>__('View All'),'url'=>'tickets/index','is_hr'=>$is_hr);
-////
-//	  if($this->access['tickets']['insert'])
-//	  {
-//      $s[] = array('title'=>__('Add Ticket'),'url'=>'tickets/new','modalbox'=>true);
-//      $is_hr = false;
-//    }
-//
-//
-//
-//    return array('title'=>__('Tickets'),'url'=>'tickets/index','submenu'=>$s,'class'=>'fa-bell');
-//	}
-	
+
 	public function buildDiscussionsMenu()
 	{
     $s = array();
@@ -217,7 +199,6 @@ class menuController
     if($this->sf_user->hasCredential('reports_access_tickets'))
 	  {	    
 	    //$rm = $this->buildReportsMenuByTable('TicketsReports');
-//      $s[] = array('title'=>__('Tickets Reports'),'url'=>'ticketsReports/index');
       //$s[] = array('title'=>__('Add New'),'url'=>'ticketsReports/new','modalbox'=>true);
       //$s[] = array('title'=>__('View All'),'url'=>'ticketsReports/index');
     }
@@ -316,14 +297,6 @@ class menuController
                         array('title'=>__('Tasks Listing'),'url'=>'configuration/index?type=tasks_columns_list'),
                         array('title'=>__('Extra Fields'),'url'=>'extraFields/index?bind_type=tasks'),                        
                       )),
-//                    array('title'=>__('Tickets'),
-//                      'url'=>'departments/index',
-//                      'submenu'=>array(
-//                        array('title'=>__('Departments'),'url'=>'departments/index'),
-//                        array('title'=>__('Status'),'url'=>'ticketsStatus/index'),
-//                        array('title'=>__('Types'),'url'=>'ticketsTypes/index'),
-//                        array('title'=>__('Extra Fields'),'url'=>'extraFields/index?bind_type=tickets'),
-//                      )),
                     array('title'=>__('Discussions'),
                       'url'=>'discussionsStatus/index',
                       'submenu'=>array(
