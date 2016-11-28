@@ -149,6 +149,8 @@ class projectsMenuController
     if($this->sf_user->hasCredential('reports_access_gantt'))
     {
       $s[] = array('title'=>__('Gantt Chart'),'url'=>'ganttChart/index?projects_id=' . $this->projects_id);
+      $s[] = array('title'=>__('Kanban Board'),'url'=>'kanbanBoard/index?projects_id=' . $this->projects_id);
+
     }
     
     if(count($s)>0)

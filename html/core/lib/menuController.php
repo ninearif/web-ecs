@@ -238,6 +238,7 @@ class menuController
 	  if($this->sf_user->hasCredential('reports_access_gantt'))
 	  {
 	    $s[] = array('title'=>__('Gantt Chart'),'url'=>'ganttChart/index','is_hr'=>true);	
+	    $s[] = array('title'=>__('Kanban Board'),'url'=>'kanbanBoard/index','is_hr'=>true);
 	  }
             	    
 	  if(count($s)>0)
