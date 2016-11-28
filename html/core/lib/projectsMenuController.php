@@ -65,18 +65,18 @@ class projectsMenuController
       $m[] = array('title'=>__('Tasks'),'submenu'=>$s,'is_selected'=>in_array($sf_context->getModuleName(),array('tasks','tasksComments')));
     }
     
-    if($this->access['tickets']['view'] or $this->access['tickets']['view_own']) 
-    {
-      $s = array();
-      $s[] = array('title'=>__('View All'),'url'=>'tickets/index?projects_id='. $this->projects_id);
-      
-      if($this->access['tickets']['insert'])
-  	  {	                 
-        $s[] = array('title'=>__('Add Ticket'),'url'=>'tickets/new?projects_id='. $this->projects_id,'modalbox'=>true);        
-      }      
-      
-      $m[] = array('title'=>__('Tickets'),'submenu'=>$s,'is_selected'=>in_array($sf_context->getModuleName(),array('tickets','ticketsComments')));
-    }
+//    if($this->access['tickets']['view'] or $this->access['tickets']['view_own'])
+//    {
+//      $s = array();
+//      $s[] = array('title'=>__('View All'),'url'=>'tickets/index?projects_id='. $this->projects_id);
+//
+//      if($this->access['tickets']['insert'])
+//  	  {
+//        $s[] = array('title'=>__('Add Ticket'),'url'=>'tickets/new?projects_id='. $this->projects_id,'modalbox'=>true);
+//      }
+//
+//      $m[] = array('title'=>__('Tickets'),'submenu'=>$s,'is_selected'=>in_array($sf_context->getModuleName(),array('tickets','ticketsComments')));
+//    }
     
     if($this->access['discussions']['view'] or $this->access['discussions']['view_own']) 
     {
