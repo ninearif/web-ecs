@@ -345,18 +345,7 @@ class menuController
                     array('title'=>__('Import Tasks from XLS file'),'url'=>'tools/xlsTasksImport'),                                                                                     
                    ));
   }
-  
-  public function buildUpgradeToExtendedMenu()
-	{
-     return array('title'=>'qdPM Extended','url'=>'http://qdpm-ex.com/','target'=>'_blnak',
-                  'class'=>'fa-level-up',
-                 'submenu'=>array(                    
-                    array('title'=>'See qdPM Extended Features','url'=>'http://qdpm-ex.com/features.php','target'=>'_blnak'),                       
-                    array('title'=>'Compare Extended and Free version','url'=>'http://qdpm-ex.com/compare-extended-and-free-version-of-qdpm-pid-17.html','target'=>'_blnak'),
-                    array('title'=>'Ask a question about qdPM Extended','url'=>'http://qdpm-ex.com/contact_us.php','target'=>'_blnak'),                                                                                                         
-                   ));
-  }
-  
+
   public function buildMenu()
   {
     if(!$this->sf_user->isAuthenticated())
@@ -407,7 +396,6 @@ class menuController
     {
       $m[] = $this->buildConfigurationMenu();
       $m[] = $this->buildToolsMenu();
-      $m[] = $this->buildUpgradeToExtendedMenu();
     }
                  
     return $m;
